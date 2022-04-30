@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: dm sans, sans-serif;
+  list-style: none;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  padding: 8px 12px 8px 12px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #3d83af;
+}
+
+i {
+  padding-right: 7px;
+}
+
+i:hover {
+  color: #3d83af;
+}
+
+
+
+
+header {
+  background-image: linear-gradient(to bottom, #011826, #012840);
+
+  color: blanchedalmond;
+  height: 120px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 36px;
+  font-weight: bolder;
+  box-shadow: 0 1.5px 2px 0px rgba(0, 0, 0, 0.387);
+
+}
+
+.header {
+  max-width: 940px;
+  margin: auto;
+}
+
+header p {
+  padding: 32px;
+  font-family: Poppins, sans-serif;
+  text-shadow: 0px 0px 0px rgba(255, 235, 205, 0.338);
+
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 0px 3px 1px rgba(0, 0, 0, 0.387);
+  text-align: justify;
+
+}
+
+.hided {
+  display: none;
+}
+
+@media (min-width: 750px) {
+
+  body {
+    background-color: rgb(170, 170, 170);
+  }
+
+
+
+
+  .container {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-areas:
+      "personnal experience"
+      "contact experience"
+      "sidebar experience"
+      "exp exp"
+    ;
+
+  }
+
+  #personnal {
+    background-color: white;
+    grid-area: personnal;
+    padding-top: 2em;
+  }
+
+  #experience {
+    background-color: rgba(253, 255, 253, 0.886);
+    grid-area: experience;
+    padding-top: 2em;
+  }
+
+  .experiencia {
+    padding-top: 1em;
+  }
+
+  #sidebar {
+    background-color: white;
+    margin-top: -1px;
+    grid-area: sidebar;
+  }
+
+  #contact {
+    background-color: white;
+    grid-area: contact;
+    margin-top: -1px;
+  }
+
+  #contact .hided {
+    display: block;
+  }
+
+
+
+  #exp {
+    background-color: rgba(253, 255, 253, 0.886);
+    grid-area: exp;
+    padding-top: 1em;
+  }
+}
+
+footer {
+  background-image: linear-gradient(to top, #011826, #012840);
+  color: blanchedalmond;
+  text-align: center;
+  font-size: 0.6em;
+  box-shadow: 0 -1.5px 2px 0px rgba(0, 0, 0, 0.387);
+}
